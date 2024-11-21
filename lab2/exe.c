@@ -26,8 +26,8 @@ void q1_A()
 void q1_B()
 {
 	int arr[ARRAY_SIZE];
-	for(int i;i<ARRAY_SIZE;i++)
-		initArray(arr,ARRAY_SIZE);
+	//for(int i=0;i<ARRAY_SIZE;i++)//
+	initArray(arr,ARRAY_SIZE);
 		
 	printArray(arr,ARRAY_SIZE);
 	int res = checkArray(arr,ARRAY_SIZE);

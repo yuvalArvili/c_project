@@ -16,7 +16,7 @@ int checkArray(int arr[], int size){
 int countCharInMat(char mat[][COLS],int rows,int cols, char tav){
 
 	int count =0;
-	for(int i; i<rows;i++){
+	for(int i=0; i<rows;i++){
 		for(int j=0; j< cols;j++){
 			if(tolower(mat[i][j]) == tolower(tav)) 
 				count++;

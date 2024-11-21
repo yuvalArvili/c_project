@@ -8,25 +8,29 @@ void printArray(int lst[], int size){
 }
 
 void initArray(int lst[], int size){
-	printf("please enter %d numbers", size);
-	for(int i; i<size;i++)
-		scanf("%d ",&lst[i]);
+	printf("please enter %d numbers\n", size);
+	for(int i=0; i<=size-1;i++){
+		scanf("%d",&lst[i]);
+	      }
+	      
 }
 
 void printMat(char mat[][COLS],int rows,int cols){
-	for(int i=0; i< rows;i++){
-		for(int j=0; j< cols;j++)
-			printf("%d ",mat[i][j]);	
+	for(int i=0; i<= rows-1;i++){
+		for(int j=0; j<= cols-1;j++){
+			printf("%c\t",mat[i][j]);	
+                }
+                printf("\n");
 	}
 }
  
 void initMat(char mat[][COLS],int rows,int cols){
 	printf("please enter %d numbers", rows*cols);
 	char c;
-	for(int i; i<rows;i++){
-		for(int j=0; j< cols;j++){
+	for(int i=0; i<=rows-1;i++){
+		for(int j=0; j<=cols-1;j++){
 			do{
-			    scanf("%c ",&c);
+			    scanf("%c",&c);
 			  } while(isspace(c));
 			  mat[i][j] = c;
 		
