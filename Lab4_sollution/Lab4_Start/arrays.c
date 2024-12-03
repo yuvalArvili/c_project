@@ -50,7 +50,7 @@ void initMat(int* mat,int rows,int cols){
 
 
 void printArrayRevers_Offset(int* arr,int size){
-	for(int i=size-1;i>=0;i++){
+	for(int i=size-1;i>=0;i--){
 		printf("%d",*(arr + i));
 		printf(" ");
 	}
@@ -59,8 +59,8 @@ void printArrayRevers_Offset(int* arr,int size){
 
 
 void printArrayRevers_WP(int* arr,int size){
-	for(int i=size-1;i>=0;i++){
-		printf("%d",*(arr+size-1));
+	for(int i=size-1;i>=0;i--){
+		printf("%5d",*(arr+size-1));
 		printf(" ");
 		arr--;
 	}

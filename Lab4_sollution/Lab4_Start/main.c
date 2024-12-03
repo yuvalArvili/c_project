@@ -2,8 +2,8 @@
 
 int  main()
 {
-	//q_ReverseArr();//
-	//q_PrintMat();//
+	q_ReverseArr();
+	q_PrintMat();
 	q_PrintArrReverse();
 	q_PrintMixMatrix();
 	q_PaintMatrix();
