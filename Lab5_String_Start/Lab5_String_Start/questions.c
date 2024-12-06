@@ -54,9 +54,14 @@ void q1()
 
 void q2()
 {
-
-
-
+  char str[SIZE];
+  char theWord[SIZE];
+  printf("please enter a sentence ");
+  fgets(str,SIZE,stdin);
+  str[strcspn(str, "\n")] = '\0';
+  printf("\n");
+  int res = mostCapitalCountWord(str,theWord);
+  printf("the word with the most capital letters is: %s with %d capital letters \n",theWord,res);
 }
 
 void q3()
@@ -65,7 +70,7 @@ void q3()
 
 	printf("Base string is: %s \n", str);
 
-	//call the function
+	removeSpace(str);
 
 	printf("New string is: %s \n", str);
 }
